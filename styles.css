@@ -1,0 +1,267 @@
+:root {
+  --cinza: #CBCBCB;
+  --cinza-grad: #606060;
+  --dark-cinza: #404040;
+  --azul: #204C71;
+  --azul-projetos: #3887C7;
+  --azul-texto: #C7DDE5;
+  --marron: #99633F;
+  --preto: #000508;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family:"Montserrat" ,sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+header {
+  position:fixed;
+  height: 9vh;
+  width: 100vw;
+  background-color: var(--azul);
+}
+
+.mago {
+  display: none;
+}
+
+#navbar {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.3rem;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  width: 100px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.1 ease;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background-color: var(--marron);
+}
+
+.about {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background: linear-gradient(90deg, var(--cinza-grad), var(--dark-cinza));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: -2rem;
+  color: white;
+}
+
+.about p {
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  font-weight: 100;
+  color: var(--azul-texto);
+}
+
+#projects {
+  background-color: var(--azul-projetos);
+  height: 300vh;
+  width: 100vw;
+}
+
+#projects h2 {
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+}
+
+
+.card {
+  width: 300px;
+  height: 280px;
+  background-color: var(--cinza);
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card img {
+  display:block;
+  height: 80%;
+  width: 90%;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 3px;
+  margin-bottom: 0.4rem;
+}
+
+.project-title {
+  font-size: 1.3rem;
+  color: #060D14;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.5s ease;
+}
+
+.project-title:hover {
+  text-decoration: underline;
+  color: var(--dark-cinza);
+}
+
+#contact {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background: linear-gradient(90deg, var(--cinza-grad), var(--dark-cinza));
+  display: flex;
+  flex-direction:column;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+#contact h2 {
+  color: white;
+  font-size: 3.5rem;
+  text-align: center;
+  padding-top: 3.5rem;
+  padding-bottom: 1rem;
+}
+
+#contact p {
+  font-size: 0.9rem;
+  font-weight: 100;
+  color: var(--azul-texto);
+}
+
+.social-media {
+  display:flex;
+  height: 4vh;
+  width: 80vw;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-media img {
+  height: 24px;
+  margin-left: 0.5rem;
+}
+
+.media {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.media a {
+  text-decoration: none;
+  color: white;
+  font-weight: 100;
+  font-size: 0.9rem;
+  padding-left: 0.2rem;
+}
+
+hr {
+  border: 1px solid var(--marron);
+}
+
+footer {
+  height: 9vh;
+  background-color: var(--azul);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer p {
+  margin: 0 auto;
+  color: white;
+  font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  #projects {
+    height: 165vh;
+  }
+  #projects h2 {
+    margin-bottom: 1.5rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 1rem;
+  }
+
+  #contact p {
+    font-size: 1.2rem;
+  }
+
+  .social-media {
+    height: 8vh;
+    width: 80vw;
+}
+
+  .social-media img {
+    height: 48px;
+    margin-left: 0.8rem;
+  }
+
+
+  .media a {
+    font-size: 1.5rem;
+    padding-left: 0.9rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .mago {
+    display: inline;
+    height: 100%;
+    margin-left: 1rem;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #navbar {
+    margin-right: 1rem;
+  }
+  .about h1 {
+    font-size: 4.5rem;
+  }
+  .about p {
+    font-size: 1.5rem;
+  }
+  #projects {
+    height: 120vh;
+  }
+  .cards {
+    width: 1100px;
+    margin: 0 auto;
+  }
+}

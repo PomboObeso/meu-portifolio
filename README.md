@@ -5,9 +5,12 @@ Aqui compartilho um pouco sobre mim, meus projetos e formas de contato.
 
 ## 🚀 Demonstração
 
-🔗 [Acesse meu portfólio no GitHub Pages](https://pomboobeso.github.io/portfolio/)  
+🔗 [Acesse meu portfólio no GitHub Pages](https://pomboobeso.github.io/meu-portifolio/)  
 
-![Preview do site](https://i.ibb.co/FLZZ9MmG/mago.png)
+**Preview do Site**
+
+<img width="1913" height="926" alt="image" src="https://github.com/user-attachments/assets/2a621709-98c2-4751-92ce-30b03e1b6496" />
+
 
 ---
 
